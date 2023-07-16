@@ -151,11 +151,16 @@ header {
 
 /* FOOTER */  
 
-.titulo {
+
+
+h1.titulo {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: left;
+  align-items: baseline;
+  height: 0px;
+  margin-left: 120px;
+  top: -800px;
   position: relative;
 }
 
-h1.titulo {
-  left: 99px;
-  top: -648px;
-}
