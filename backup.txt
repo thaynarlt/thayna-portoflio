@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thayná Tolentino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+
+    <header class="container">
+        <nav>
+          <ul>
+            <li class="item_menu">
+              <a href="./paginas/albuns.html">SOBRE MIM</a>
+            </li>
+            <!-- MUDAR HREF PARA PGS-->
+            <li class="item_menu">
+              <a href="./paginas/theerastour.html">PROJETOS</a>
+            </li>
+            <li class="item_menu">
+              <a href="./paginas/sobre.html">CONTATO</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
+    <footer class="footer">
+        <adress>
+            Criação e Desenvolvimento: <a href="mailto:thayvfx@gmail.com"> Thayná Tolentino </a> &copy; 2023
+        </adress>
+
+    </footer>
+   </div>
+</body>
+</html>
+
+
+
+
+CSS
+
+
+@font-face {
+    font-family: "Bright-DEMO";
+    src: url(./sources/fonts/Bright\ DEMO.otf);
+  }
+
+@font-face {
+    font-family: "DarkerGrotesque-Regular";
+    src: url(./sources/fonts/DarkerGrotesque-Regular.ttf);
+  }
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track - a parte em que a thumb se move */
+::-webkit-scrollbar-track {
+    background: #B3AAC5; /* Cor do fundo da trilha */
+    border-radius: 0px; /* Bordas arredondadas */
+}
+
+/* Thumb - a "bolinha" que pode ser arrastada */
+::-webkit-scrollbar-thumb {
+    background: #ffffff; /* Cor da thumb (bolinha) */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8872BA; /* Cor da thumb ao passar o mouse */
+}
+/*FIM DA SCROLL BAR*/
+/*Imagem como plano de fundo da tela no body*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./sources/imgs/desktop\ view1920x1080_00000.png), url(./sources/imgs/desktop\ view1920x1080_00000\ -\ invertido.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*FIM da Imagem como plano de fundo da tela no body*/
+
+h1{
+    font-family: "Bright DEMO";
+    font-size: 130px;
+    color: white;
+    font-style: normal;
+    letter-spacing: 0.045em;
+    line-height: 15%;
+}
+
+header {
+    height: 0;
+    background-size: cover;
+    padding-bottom: 56.25%;
+  
+  }
+  
+  header nav {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+  }
+  
+  header nav li {
+    padding: 0 25px;
+    font-family: "DarkerGrotesque-Regular";
+    font-size: 23px;
+    color: #ffffff;
+  }
+  
+  header nav li a {
+    padding: 0px;
+    color: #ffffff;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  header nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  .item_menu:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }

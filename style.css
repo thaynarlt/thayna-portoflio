@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Bright DEMO";
+    src: url(./sources/fonts/Bright\ DEMO.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "DarkerGrotesque-Regular";
+    src: url(./sources/fonts/DarkerGrotesque-Regular.ttf);
+  }
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track - a parte em que a thumb se move */
+::-webkit-scrollbar-track {
+    background: #B3AAC5; /* Cor do fundo da trilha */
+    border-radius: 0px; /* Bordas arredondadas */
+}
+
+/* Thumb - a "bolinha" que pode ser arrastada */
+::-webkit-scrollbar-thumb {
+    background: #ffffff; /* Cor da thumb (bolinha) */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8872BA; /* Cor da thumb ao passar o mouse */
+}
+/*FIM DA SCROLL BAR*/
+/*Imagem como plano de fundo da tela no body*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./sources/imgs/desktop\ view_nomenovo00000.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*FIM da Imagem como plano de fundo da tela no body*/
+
+h1{
+    font-family: "Bright DEMO";
+    font-size: 130px;
+    color: white;
+    font-style: normal;
+    letter-spacing: 0.045em;
+    line-height: 8%;
+}
+
+header {
+    height: 0;
+    background-size: cover;
+    padding-bottom: 56.25%;
+  
+  }
+  
+  header nav {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+  }
+  
+  header nav li {
+    padding: 0 25px;
+    font-family: "DarkerGrotesque-Regular";
+    font-size: 23px;
+    color: #ffffff;
+  }
+  
+  header nav li a {
+    padding: 0px;
+    color: #ffffff;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header nav li a:hover {
+    text-decoration: none;
+    opacity: 70%;
+    transform: scale(1.1);
+  }
+  
+  .item_menu {
+    transition: transform 0.3s;
+    will-change: scale;
+  }
+
+  .item_menu:hover {
+    transform: scale(1.1);
+  }
+
+
+/* FOOTER */  
+  .footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+  
+  
+  .footer .icones {
+    display: flex;
+    padding-top: 20px;
+  }
+  
+  .footer .icones img {
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .footer .icones a {
+    transition: transform 0.5s;
+    will-change: scale;
+  }
+  
+  .footer .icones a:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer .copyright {
+    padding: 2rem;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: "DarkerGrotesque-Regular";
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+  }
+
+/* FOOTER */  
