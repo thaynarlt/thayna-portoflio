@@ -99,46 +99,45 @@
 /* ------------------------------------------------------------------- 
  * ## colors
  * ------------------------------------------------------------------- */
-:root {
-  /* color-1(#EA9010)
-   * color-2(#343D35)
-   * color-3(#FEF5E4)
-   */
-	--color-1: hsla(35, 87%, 49%, 1);
-	--color-2: hsla(127, 8%, 22%, 1);
-	--color-3: hsla(39, 93%, 95%, 1);
-
-  /* theme color variations
-   */
-	--color-1-lightest             : hsla(35, 87%, 96%, 1);
-	--color-1-lighter              : hsla(35, 87%, 69%, 1);
-	--color-1-light                : hsla(35, 87%, 59%, 1);
-	--color-1-dark                 : hsla(35, 87%, 39%, 1);
-	--color-1-darker               : hsla(35, 87%, 29%, 1);
-	--color-1-darkest              : hsla(35, 87%, 10%, 1);
-
-	--color-2-lightest             : hsla(127, 8%, 55%, 1);
-	--color-2-lighter              : hsla(127, 8%, 42%, 1);
-	--color-2-light                : hsla(127, 8%, 32%, 1);
-	--color-2-dark                 : hsla(127, 8%, 14%, 1);
-	--color-2-darker               : hsla(127, 8%, 2%, 1);
-	
-	--color-3-light                : hsla(39, 93%, 100%, 1);
-	--color-3-dark                 : hsla(39, 93%, 85%, 1);
-	--color-3-darker               : hsla(39, 93%, 75%, 1);
-
+ :root {
+	/* color-1 (#658DA6)
+	 * color-2 (#262626)
+	 * color-3 (#FEF5E4)
+	 */
+	--color-1: #658DA6;
+	--color-2: #262626;
+	--color-3: #FEF5E4;
+  
+	/* theme color variations */
+	--color-1-lightest             : #D2E1E7; /* Lighter variation of #658DA6 */
+	--color-1-lighter              : #9CB5C3; /* Lighter variation of #658DA6 */
+	--color-1-light                : #7D9EAF; /* Lighter variation of #658DA6 */
+	--color-1-dark                 : #517689; /* Darker variation of #658DA6 */
+	--color-1-darker               : #3B5A69; /* Darker variation of #658DA6 */
+	--color-1-darkest              : #223747; /* Darkest variation of #658DA6 */
+  
+	--color-2-lightest             : #595959; /* Lighter variation of #262626 */
+	--color-2-lighter              : #444444; /* Lighter variation of #262626 */
+	--color-2-light                : #333333; /* Lighter variation of #262626 */
+	--color-2-dark                 : #1A1A1A; /* Darker variation of #262626 */
+	--color-2-darker               : #0D0D0D; /* Darkest variation of #262626 */
+  
+	--color-3-light                : #FFFFFF; /* Lighter variation of #FEF5E4 */
+	--color-3-dark                 : #F2E7C8; /* Darker variation of #FEF5E4 */
+	--color-3-darker               : #E6D9AC; /* Darker variation of #FEF5E4 */
+  
   /* feedback colors
    * color-error(#ffd1d2), color-success(#c8e675), 
    * color-info(#d7ecfb), color-notice(#fff099)
    */
-	--color-error                  : hsla(359, 100%, 91%, 1);
-	--color-success                : hsla(76, 69%, 68%, 1);
-	--color-info                   : hsla(205, 82%, 91%, 1);
-	--color-notice                 : hsla(51, 100%, 80%, 1);
-	--color-error-content          : hsla(359, 50%, 50%, 1);
-	--color-success-content        : hsla(76, 29%, 28%, 1);
-	--color-info-content           : hsla(205, 32%, 31%, 1);
-	--color-notice-content         : hsla(51, 30%, 30%, 1);
+	--color-error                  : #FFD6D6;
+	--color-success                : #A9D8A2;
+	--color-info                   : #D0E5FF;
+	--color-notice                 : #FFECB3;
+	--color-error-content          : #800000;
+	--color-success-content        : #234D20;
+	--color-info-content           : #1C3A57;
+	--color-notice-content         : #4D3B00;
 
   /* shades 
    * generated using 
@@ -2764,7 +2763,6 @@ td:last-child {
 	font-family: var(--font-1);
 	font-size  : var(--text-md);
 	line-height: var(--vspace-1);
-	color      : var(--color-1);
 	transform  : translate(0.2em, 0);
 	margin-top : 0;
 }
@@ -3268,7 +3266,7 @@ td:last-child {
 	font-weight        : 400;
 	font-size          : 1.6rem;
 	line-height        : var(--vspace-1);
-	color              : var(--color-2-lightest);
+	color              : var(--color-3);
 	padding            : 0 1.2rem;
 	transition-property: color, background-color;
 }
@@ -3580,7 +3578,6 @@ td:last-child {
 	--content-min-height    : calc(var(--vspace-1) * 27);
 	z-index                 : 2;
 	background-color        : var(--color-2-dark);
-	background              : linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
 	width                   : 100%;
 	height                  : max(var(--content-min-height), 100vh);
 	overflow                : hidden;
@@ -3631,7 +3628,7 @@ td:last-child {
 }
 
 .s-intro__content-title {
-	font-size    : clamp(5rem, 7vw, 11.6rem);
+	font-size: clamp(5rem, 6vw, 10rem);
 	line-height  : 1;
 	margin-top   : 0;
 	margin-bottom: var(--vspace-1_25);
@@ -3948,7 +3945,7 @@ td:last-child {
 .s-about {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-6);
-	background-color: var(--color-2-dark);
+	background: linear-gradient(20deg, hsl(210, 25%, 50%) 40%, hsl(210, 20%, 35%) 100%);
 	color           : var(--color-3);
 }
 
@@ -3983,8 +3980,8 @@ td:last-child {
 }
 
 .s-about__social {
-	margin-top     : var(--vspace-0_75);
-	justify-content: center;
+	margin-top     : var(--vspace-0_45);
+	justify-content: left;
 }
 
 .s-about__social svg path,
@@ -4739,4 +4736,9 @@ td:last-child {
 
 .contact-list li {
 	padding-left: 0;
+}
+
+strong, b {
+    font-weight: 600;
+    color: var(--color-3);
 }
