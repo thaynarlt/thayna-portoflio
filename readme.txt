@@ -4,6 +4,8 @@ DESCRIPTION:
 
 Meu Portfolio - Thayná Tolentino
 
+https://thaynarlt.github.io/thayna-portoflio/
+
 ==================================================================================================
 
 
